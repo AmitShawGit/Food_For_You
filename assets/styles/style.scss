@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+$yellow: #ffe001;
+$secondary-yellow: #e8e6a9;
+
+* {
+    font-family: "Montserrat", sans-serif;
+    // font-family: "Fredericka the Great", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Gabelisa';
+    src: url('../Gabelisa\ Font\ by\ Keithzo\ \(7NTypes\).otf');
+}
+
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+//TopBar
+.topbar {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .call-img {
+        text-transform: uppercase;
+        position: relative;
+        text-align: right;
+        padding-top: 9px;
+        line-height: normal;
+        font-weight: 600;
+        font-size: 15px;
+        font-family: Montserrat;
+
+        a {
+            color: #000;
+            font-size: 25px;
+        }
+
+        img {
+            position: absolute;
+            top: 0;
+            padding-left: 10px;
+        }
+
+        ;
+    }
+}
