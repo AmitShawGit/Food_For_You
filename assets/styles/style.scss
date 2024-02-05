@@ -58,4 +58,41 @@ a {
 
         ;
     }
+
+    @media (max-width:320px) {
+        align-items: center;
+
+        img {
+            width: 70%;
+        }
+
+        .call-img {
+            display: none;
+        }
+    }
+}
+
+//Main-Navbar
+.main-navbar {
+    float: right;
+
+    ul {
+        list-style: none;
+
+        li {
+            display: inline-block;
+            margin: 1rem;
+            text-transform: uppercase;
+
+            @media (max-width:320px) {
+                ul {
+                    li {
+                        display: list-item;
+                    }
+                }
+
+            }
+        }
+    }
+
 }

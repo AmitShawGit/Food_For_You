@@ -45,4 +45,32 @@ a {
   position: absolute;
   top: 0;
   padding-left: 10px;
+}
+@media (max-width: 320px) {
+  .topbar {
+    align-items: center;
+  }
+  .topbar img {
+    width: 70%;
+  }
+  .topbar .call-img {
+    display: none;
+  }
+}
+
+.main-navbar {
+  float: right;
+}
+.main-navbar ul {
+  list-style: none;
+}
+.main-navbar ul li {
+  display: inline-block;
+  margin: 1rem;
+  text-transform: uppercase;
+}
+@media (max-width: 320px) {
+  .main-navbar ul li ul li {
+    display: list-item;
+  }
 }/*# sourceMappingURL=style.css.map */
