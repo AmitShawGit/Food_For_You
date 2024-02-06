@@ -28,12 +28,21 @@ a {
     text-decoration: none;
 }
 
+.show {
+    display: block !important;
+
+}
+
 //TopBar
 .topbar {
     margin-top: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    .fa-bars {
+        display: none;
+    }
 
     .call-img {
         text-transform: uppercase;
@@ -59,17 +68,6 @@ a {
         ;
     }
 
-    @media (max-width:320px) {
-        align-items: center;
-
-        img {
-            width: 70%;
-        }
-
-        .call-img {
-            display: none;
-        }
-    }
 }
 
 //Main-Navbar
@@ -78,21 +76,100 @@ a {
 
     ul {
         list-style: none;
+        transition: all .5s ease-in-out;
 
         li {
             display: inline-block;
             margin: 1rem;
             text-transform: uppercase;
 
-            @media (max-width:320px) {
-                ul {
-                    li {
-                        display: list-item;
-                    }
-                }
 
-            }
         }
     }
 
+}
+
+/*Responsive*/
+
+@media (max-width:768px) {
+
+    /*Topbar*/
+    .topbar {
+        height: 50px;
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 30%;
+        }
+
+        .call-img {
+            display: none;
+        }
+
+        .fa-bars {
+            margin-top: 3.5%;
+            display: block;
+        }
+    }
+
+    /*Navbar*/
+    .main-navbar {
+        float: left;
+        width: 100vw;
+        justify-content: center;
+        transform: translate(32%, 0);
+        padding-top: 7%;
+
+        ul {
+            text-align: center;
+            display: grid;
+
+            li {
+                margin: 0.5rem 0;
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+
+    /*Topbar*/
+    .topbar {
+        height: 50px;
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 50%;
+        }
+
+        .call-img {
+            display: none;
+        }
+
+        .fa-bars {
+            margin-top: 3.5%;
+            display: block;
+        }
+    }
+
+    /*Navbar*/
+    .main-navbar {
+        float: left;
+        width: 100vw;
+        justify-content: center;
+        transform: translate(32%, 0);
+        padding-top: 7%;
+        transition: all 0.5s ease-in-out;
+
+        ul {
+            text-align: center;
+            display: grid;
+
+            li {
+                margin: 0.5rem 0;
+            }
+        }
+    }
 }
