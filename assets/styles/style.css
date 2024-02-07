@@ -56,7 +56,7 @@ a {
 }
 
 .main-navbar {
-  float: right;
+  justify-content: end;
 }
 .main-navbar ul {
   list-style: none;
