@@ -68,6 +68,13 @@ a {
   text-transform: uppercase;
 }
 
+.hero-section h1 {
+  text-transform: capitalize;
+}
+.hero-section span {
+  text-transform: uppercase;
+}
+
 /*Responsive*/
 @media (max-width: 768px) {
   /*Topbar*/

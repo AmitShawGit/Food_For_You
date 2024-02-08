@@ -89,7 +89,15 @@ a {
     }
 
 }
-
+//hero-section
+.hero-section{
+    h1{
+        text-transform: capitalize;
+    }
+    span{
+        text-transform: uppercase;
+    }
+}
 /*Responsive*/
 
 @media (max-width:768px) {
