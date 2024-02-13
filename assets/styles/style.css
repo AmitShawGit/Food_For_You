@@ -57,7 +57,7 @@ a {
 }
 
 .main-navbar {
-  float: right;
+  justify-content: end;
 }
 .main-navbar ul {
   list-style: none;
@@ -66,6 +66,13 @@ a {
 .main-navbar ul li {
   display: inline-block;
   margin: 1rem;
+  text-transform: uppercase;
+}
+
+.hero-section h1 {
+  text-transform: capitalize;
+}
+.hero-section span {
   text-transform: uppercase;
 }
 

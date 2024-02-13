@@ -73,7 +73,7 @@ a {
 
 //Main-Navbar
 .main-navbar {
-    float: right;
+    justify-content: end;
 
     ul {
         list-style: none;
@@ -88,7 +88,15 @@ a {
     }
 
 }
-
+//hero-section
+.hero-section{
+    h1{
+        text-transform: capitalize;
+    }
+    span{
+        text-transform: uppercase;
+    }
+}
 /*Responsive*/
 
 @media (max-width:768px) {
