@@ -27,7 +27,7 @@ a {
 }
 
 .topbar {
-  margin-top: 1rem;
+  padding-top: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,6 +45,7 @@ a {
   font-size: 15px;
   font-family: Montserrat;
   margin-right: 5%;
+  z-index: 9;
 }
 .topbar .call-img a {
   color: #000;
@@ -58,6 +59,7 @@ a {
 
 .main-navbar {
   justify-content: end;
+  z-index: 9;
 }
 .main-navbar ul {
   list-style: none;
@@ -69,33 +71,59 @@ a {
   text-transform: uppercase;
 }
 
+.hero-section {
+  background-color: #ffe001;
+  position: relative;
+}
+.hero-section img {
+  z-index: 2;
+  position: relative;
+}
 .hero-section h1 {
   text-transform: capitalize;
 }
 .hero-section span {
   text-transform: uppercase;
 }
+.hero-section::before {
+  position: absolute;
+  content: "";
+  z-index: 1;
+  right: 0;
+  width: 50vw;
+  height: 100%;
+  background-color: #e0dea4;
+  -webkit-clip-path: polygon(53% 0, 100% 0%, 100% 100%, 18% 100%);
+          clip-path: polygon(53% 0, 100% 0%, 100% 100%, 18% 100%);
+}
 
 /*Responsive*/
 @media (max-width: 768px) {
-  /*Topbar*/
-  .topbar {
+  header {
+    z-index: 4;
+    background: #ffe001;
+    position: relative;
+    height: 70px;
+    /*Topbar*/
+    /*Navbar*/
+  }
+  header .topbar {
     height: 50px;
     display: flex;
     align-items: center;
   }
-  .topbar img {
+  header .topbar img {
     width: 30%;
   }
-  .topbar .call-img {
+  header .topbar .call-img {
     display: none;
   }
-  .topbar .fa-bars {
+  header .topbar .fa-bars {
     margin-top: 3.5%;
     display: block;
+    z-index: 9;
   }
-  /*Navbar*/
-  .main-navbar {
+  header .main-navbar {
     float: left;
     width: 100vw;
     justify-content: center;
@@ -103,11 +131,12 @@ a {
     display: none;
     transition: all 5s ease-in-out;
   }
-  .main-navbar ul {
+  header .main-navbar ul {
     text-align: center;
     display: grid;
+    background-color: #ffe001;
   }
-  .main-navbar ul li {
+  header .main-navbar ul li {
     margin: 0.5rem 0;
   }
 }
