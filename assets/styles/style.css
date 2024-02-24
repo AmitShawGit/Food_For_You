@@ -81,6 +81,7 @@ a {
 }
 .hero-section h1 {
   text-transform: capitalize;
+  font-family: Gabelisa;
 }
 .hero-section span {
   text-transform: uppercase;
