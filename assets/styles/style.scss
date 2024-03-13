@@ -114,6 +114,9 @@ a {
         text-transform: uppercase;
         font-size: 254px;
     }
+    & :nth-child(2) span{
+font-size: 39px;
+    }
 
     &::before {
         position: absolute;

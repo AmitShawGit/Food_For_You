@@ -90,6 +90,9 @@ a {
   text-transform: uppercase;
   font-size: 254px;
 }
+.hero-section :nth-child(2) span {
+  font-size: 39px;
+}
 .hero-section::before {
   position: absolute;
   content: "";
