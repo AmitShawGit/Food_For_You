@@ -81,6 +81,7 @@ a {
     ul {
         list-style: none;
         transition: all .5s ease-in-out;
+
         li {
             display: inline-block;
             margin: 1rem;
@@ -95,9 +96,13 @@ a {
 .hero-section {
     background-color: $yellow;
     position: relative;
+    text-align: center;
+   
 
-    & :nth-child(2) , :nth-child(5) {
+    & :nth-child(2),
+    :nth-child(5) {
         font-family: "Fredericka the Great", serif;
+        text-transform: uppercase;
     }
 
     img {
@@ -108,15 +113,23 @@ a {
     h1 {
         text-transform: capitalize;
         font-family: Gabelisa;
+
+    }
+
+    .underline-hero {
+        margin: 0 auto;
+        width: 70%;
+        height: 1px;
+        background-color: black;
+        display: block;
     }
 
     span {
-        text-transform: uppercase;
-        font-size: 254px;
+        font-size: 50px;
+        font-weight: 400;
     }
-    & :nth-child(2) span{
-font-size: 39px;
-    }
+
+
 
     &::before {
         position: absolute;
@@ -127,6 +140,11 @@ font-size: 39px;
         height: 100%;
         background-color: $secondary-yellow;
         clip-path: polygon(53% 0, 100% 0%, 100% 100%, 18% 100%);
+    }
+    .happy-hours{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
