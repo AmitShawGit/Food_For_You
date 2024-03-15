@@ -33,6 +33,10 @@ a {
     transition: all 5s ease-in-out;
 }
 
+.btn{
+  border-radius: 0;      
+}
+
 //TopBar
 .topbar {
     padding-top: 1rem;
@@ -60,6 +64,7 @@ a {
         a {
             color: #000;
             font-size: 25px;
+            font-family: Montserrat;
         }
 
         img {
@@ -86,6 +91,7 @@ a {
             display: inline-block;
             margin: 1rem;
             text-transform: uppercase;
+            font-weight: 600;
 
         }
     }
@@ -97,13 +103,14 @@ a {
     background-color: $yellow;
     position: relative;
     text-align: center;
-   
+
 
     & :nth-child(2),
     :nth-child(5) {
         font-family: "Fredericka the Great", serif;
         text-transform: uppercase;
     }
+
 
     img {
         z-index: 2;
@@ -112,7 +119,7 @@ a {
 
     h1 {
         text-transform: capitalize;
-        font-family: Gabelisa;
+        font-family:"Gabelisa";
 
     }
 
@@ -120,12 +127,12 @@ a {
         margin: 0 auto;
         width: 70%;
         height: 1px;
-        background-color: black;
+        background-color: #2727274a;
         display: block;
     }
 
     span {
-        font-size: 50px;
+        font-size: 63px;
         font-weight: 400;
     }
 
@@ -141,11 +148,48 @@ a {
         background-color: $secondary-yellow;
         clip-path: polygon(53% 0, 100% 0%, 100% 100%, 18% 100%);
     }
-    .happy-hours{
+
+    & .row {
+        :nth-child(3) {
+            font-weight: 800;
+            letter-spacing: 2px;
+            word-spacing: 4px;
+            margin-bottom: 20px;
+
+        }
+    }
+
+    .happy-hours {
         display: flex;
         justify-content: center;
         align-items: center;
+        p{
+            font-family: "Fredericka the Great", serif;
+            font-size: 19px;
+            padding-right: 33px;
+        }
+       span{
+        font-size: 56px;
+       }
+       
     }
+
+    .btn{
+        padding: 1.5% 4%;
+        a{
+            color: #000;
+            text-transform: uppercase;
+            font-weight: 800;
+
+            &:hover{
+                color: #fff;
+            }
+        }
+        &:hover{
+            color: #fff;
+        }
+    }
+   
 }
 
 /*Responsive*/

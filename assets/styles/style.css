@@ -26,6 +26,10 @@ a {
   transition: all 5s ease-in-out;
 }
 
+.btn {
+  border-radius: 0;
+}
+
 .topbar {
   padding-top: 1rem;
   display: flex;
@@ -50,6 +54,7 @@ a {
 .topbar .call-img a {
   color: #000;
   font-size: 25px;
+  font-family: Montserrat;
 }
 .topbar .call-img img {
   position: absolute;
@@ -69,6 +74,7 @@ a {
   display: inline-block;
   margin: 1rem;
   text-transform: uppercase;
+  font-weight: 600;
 }
 
 .hero-section {
@@ -87,17 +93,17 @@ a {
 }
 .hero-section h1 {
   text-transform: capitalize;
-  font-family: Gabelisa;
+  font-family: "Gabelisa";
 }
 .hero-section .underline-hero {
   margin: 0 auto;
   width: 70%;
   height: 1px;
-  background-color: black;
+  background-color: rgba(39, 39, 39, 0.2901960784);
   display: block;
 }
 .hero-section span {
-  font-size: 50px;
+  font-size: 63px;
   font-weight: 400;
 }
 .hero-section::before {
@@ -111,10 +117,38 @@ a {
   -webkit-clip-path: polygon(53% 0, 100% 0%, 100% 100%, 18% 100%);
           clip-path: polygon(53% 0, 100% 0%, 100% 100%, 18% 100%);
 }
+.hero-section .row :nth-child(3) {
+  font-weight: 800;
+  letter-spacing: 2px;
+  word-spacing: 4px;
+  margin-bottom: 20px;
+}
 .hero-section .happy-hours {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.hero-section .happy-hours p {
+  font-family: "Fredericka the Great", serif;
+  font-size: 19px;
+  padding-right: 33px;
+}
+.hero-section .happy-hours span {
+  font-size: 56px;
+}
+.hero-section .btn {
+  padding: 1.5% 4%;
+}
+.hero-section .btn a {
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.hero-section .btn a:hover {
+  color: #fff;
+}
+.hero-section .btn:hover {
+  color: #fff;
 }
 
 /*Responsive*/
